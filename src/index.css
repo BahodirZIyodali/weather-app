@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'montseratt', sans-serif;
+}
+.App{
+ background-image: url('https://phonoteka.org/uploads/posts/2022-01/1643268847_3-phonoteka-org-p-pogoda-fon-3.jpg');
+ background-size: cover;
+ background-position: bottom ;
+ transition: 0.4s;
+}
+/* .App.cold{
+  background-image: url('https://i.ytimg.com/vi/vFMxqOFFpHM/maxresdefault.jpg');
+
+} */
+main{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom rgba(0,0,0,0.2), rgba(0,0,0,0.75))
+  ;
+  padding :25px;
+}
+.search-box{
+  width: 100%;
+  margin: 0 0 75px;
+}
+.search-box .search-bar{
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  outline: none;
+  border: none;
+ background: none;
+ background-color: rgba(255, 255, 255, 0.5);
+ border-radius:0px 16px 0px 16px;
+ margin-top: 30vh;
+ border-bottom:5px solid rgba(255, 255, 0, 0.921);
+ box-shadow: 0px 5px rgba(0,0,0,0.2);
+ font-size: 20px;
+ transition: 0.5s ease;
+}
+.search-bar:focus{
+  background-color: rbga(255,255,255,0.75);
+  border-radius:16px 0px 16px 0;  
+}
+.location-box{
+  margin-left: 200px;
+}
+ .location{
+  margin-top: 10vh;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  /* text-align: center; */
+  text-shadow: 3px 3px rgba(0,0,0,0.75);
+}
+.date{
+  color: rgb(156, 0, 0);
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  /* text-align: center; */
+  text-shadow: 2px 2px rgba(255,255,255,0.5); 
+}
+.weather-box{
+  align-items: center;
+}
+.temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255,255,255,0.2);
+  border-radius:16px;
+  padding: 15px 2px;
+  color: #fff;
+  font-size: 100px;
+  font-weight:900;
+  text-shadow: 3px 6px rbga(50,50,70,0.5);
+  text-align: center;
+  box-shadow:3px 6px rgba(0,0,0,0.2);
+}
+.weather{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(255,255,255,0.75);
+}
+
+@media screen and (max-width: 500px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  .location-box{
+    margin-left: 0;
+  }
+}
